@@ -1,0 +1,63 @@
+
+input[type="number"] {
+  max-width: 80%;
+}
+
+div.outer {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Customize fonts */
+body, label, input, button, select { 
+  font-family: 'Montserrat', Sans-Serif;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p { 
+  font-weight: 400; 
+  font-family: 'Montserrat', Sans-Serif;
+}
+h2 {
+  color:rgb(89, 89, 89);
+  font-style: bold;
+}
+h3 {
+  color:rgb(102, 102, 153);
+}
+h5 {
+  color:rgb(128, 128, 128);
+}
+
+#controls {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+}
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+}
+
+/* Position and style citation */
+#cite {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 12px;
+}
+
+/* If not using map tiles, show a white background */
+.leaflet-container {
+  background-color: white !important;
+}
